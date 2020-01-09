@@ -64,4 +64,3 @@ Don’t hesitate to delete `/usr/bin/pep8` and replace by one of those `pep8.py`
 Finally, if you can’t make it work, please use the “container-on-demand” tool to “PEP8” your files in a pre-configured container.
 
 ## Python 'is' vs '==' ...
-
