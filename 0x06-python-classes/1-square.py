@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 class Square():
-    pass  # An empty block
+    __size = 0
 
-    def __init__(self, size):
+    def __init__(self, new_size):
         """Initialize class."""
-        self.__size = size
+        if new_name is not None:
+            self.__size = new_size
