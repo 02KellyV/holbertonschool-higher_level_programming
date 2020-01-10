@@ -4,5 +4,5 @@ class Square():
 
     def __init__(self, new_size):
         """Initialize class."""
-        if new_name is not None:
+        if new_size is not None:
             self.__size = new_size
