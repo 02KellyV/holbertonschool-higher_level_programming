@@ -36,6 +36,20 @@ class Base:
             return json.loads(json_string)
 
     @classmethod
+    def save_to_file(cls, list_objs):
+        """ JSON string on the file """
+        with open('{}.json'.format(cls.__name__), 'w') as f:
+            if list_objs is None:
+                f.write(cls.to_json_string([]))
+            else:
+                jlist = []
+                for i in list_objs:
+                    i = i.to_dictionary()
+                    jlist.append(i)
+                f.write(cls.to_json_string(jlist))
+
+
+    @classmethod
     def load_from_file(cls):
         """ load_from_files """
         try:
