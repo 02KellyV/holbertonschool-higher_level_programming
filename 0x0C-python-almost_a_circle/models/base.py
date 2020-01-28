@@ -4,6 +4,13 @@
 import json
 import csv
 import turtle
+import os
+import Tkinter
+import sys
+
+if os.environ.get('DISPLAY','') == '':
+    print('no display found. Using :0.0')
+    os.environ.__setitem__('DISPLAY', ':0.0')
 
 
 class Base:
