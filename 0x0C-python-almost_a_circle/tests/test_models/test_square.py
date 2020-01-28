@@ -23,8 +23,8 @@ class Testsquare(unittest.TestCase):
 
     def test_setter(self):
         r1 = Square(5)
-	r1.size = 8
-	self.assertEqual(r1.size, 8)
+        r1.size = 8
+        self.assertEqual(r1.size, 8)
 
     def test_string(self):
         r1 = Square(3)
