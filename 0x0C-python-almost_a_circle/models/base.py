@@ -19,6 +19,16 @@ class Base:
         else:
             self.id = id
 
+    @classmethod
+    def create(cls, **dictionary):
+        """ create """
+        if cls.__name__ == "Rectangle":
+            new = cls(1, 1, 0, 0)
+        elif cls.__name__ == "Square":
+            new = cls(1, 0, 0)
+        new.update(**dictionary)
+        return new
+
     @staticmethod
     def to_json_string(list_dictionaries):
         """ json to string represent """
@@ -47,7 +57,6 @@ class Base:
                     i = i.to_dictionary()
                     jlist.append(i)
                 f.write(cls.to_json_string(jlist))
-
 
     @classmethod
     def load_from_file(cls):
