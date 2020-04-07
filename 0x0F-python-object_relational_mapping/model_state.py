@@ -1,5 +1,5 @@
-#!/usr/bin/python3
-""" Class definition of State. Instance Base = declarative_base() """
+#!/usr/bin/python2
+""" Class definition of State InstanceBase = declarative_base() """
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String
 
